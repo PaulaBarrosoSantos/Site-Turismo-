@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="Imagem/header-image.png" alt="logo" class="logo">
+        <ul class="navbar-left">
+            <li><a href="index.html" class="header">Home</a></li>
+            <li><a href="turismo.html" class="header">Turismo</a></li>
+            <li><a href="sobre.html" class="header">Sobre</a></li>
+            <li><a href="contato.html" class="header">Contato</a></li>
+            <li><a href="formulario.html" class="header">Reserva</a></li>
+        </ul>
+    </nav>   
+<main>
+    <div class="container-form">
+        <form onsubmit="console.log('Evento submit disparado!');">
+            <h2>Reserva de Viagens</h2>
+    
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+    
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Apenas números" required>
+    
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="Formato: 123.456.789-01" required>
+
+            <label for="origem">Origem:</label>
+            <input type="text" id="origem" name="origem" required>
+    
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" required>
+    
+            <label for="data">Data de Viagem:</label>
+            <input type="date" id="data" name="data" required>
+    
+            <label for="adultos">Número de Adultos:</label>
+            <select id="adultos" name="adultos" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+    
+            <label for="criancas">Número de Crianças:</label>
+            <select id="criancas" name="criancas" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+    
+            <button type="submit" onclick="myFunction()">Reservar</button>
+        </form>
+      </div>
+</main>
+<footer>
+    <div class="footer-content">
+        <div class="img-rodape">
+            <img src="Imagem/header-image.png" alt="Rodapé">
+        </div>
+        <div class="rodape">
+            <p>A CajuínaTour é uma empresa dedicada a proporcionar experiências únicas e memoráveis aos visitantes que desejam explorar a encantadora cidade de Aracaju, localizada no litoral de Sergipe, Brasil. Com uma equipe de profissionais apaixonados por turismo e conhecimento profundo da região, estamos empenhados em tornar sua estadia em Aracaju verdadeiramente inesquecível.</p>
+        </div>
+        <div class="links-rodape">
+            <ul>
+                <li>
+                    <img src="https://web-front-end-me.my.canva.site/images/33b7b21e51ef722823a471c64675cda8.svg" alt="Telefone Glyph Icon" loading="lazy">
+                    <a href="tel:+557988141664" class="lk-footer">(79) 9 8814-1664</a>
+                </li>
+                <li>
+                    <img src="https://web-front-end-me.my.canva.site/images/a5f675633ff811108876d1551a12079e.svg" alt="Twitter Icon" loading="lazy">
+                    <a href="https://twitter.com/CajuinaTour" class="lk-footer">@CajuinaTour</a>
+                </li>
+                <li>
+                    <img src="https://web-front-end-me.my.canva.site/images/122665618a0dffecbdbf1be558c7b5be.svg" alt="Email Icon" loading="lazy">
+                    <a href="mailto:cajuinatour@gmail.com" class="lk-footer">cajuinatour@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
